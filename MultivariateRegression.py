@@ -146,13 +146,13 @@ def derivative_theta_2(y):
 
 
 num_iterations = 0
-while math.fabs(derivative_theta_0(Y)[0]) > 0.1 and math.fabs(derivative_theta_1(Y)[0])>0.1 and math.fabs(derivative_theta_2(Y)[0])>0.1:
+'''while math.fabs(derivative_theta_0(Y)[0]) > 0.1 and math.fabs(derivative_theta_1(Y)[0])>0.1 and math.fabs(derivative_theta_2(Y)[0])>0.1:
 	thetas[0] = thetas[0] - learning_rate * derivative_theta_0(Y)[0]
 	thetas[1] = thetas[1] - learning_rate * derivative_theta_1(Y)[0]
 	thetas[2] = thetas[2] - learning_rate * derivative_theta_2(Y)[0]
 	print("new theta value: " + str(thetas))
 	num_iterations+=1
-
+'''
 print()
 print("Theta Vector Values: [" + str(thetas[0]) + ", " + str(thetas[1]) + ", " + str(thetas[2]) + "]")
 
